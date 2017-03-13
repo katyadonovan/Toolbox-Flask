@@ -1,0 +1,67 @@
+<html>
+   <head>
+       <title>Loving it</title>
+       <!-- <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}"> -->
+   </head>
+   <link     href='http://fonts.googleapis.com/css?family=Sintony:400,700'     rel='stylesheet' type='text/css'>
+   <style type="text/css">
+     body
+     {
+       background-color:#000;
+     }
+
+     h1
+     {
+       font-size:48px;
+       margin-top:0;
+       font-family:Arial, sans-serif;
+       text-shadow:2px 0 15px #292929;
+       letter-spacing:4px;
+       text-decoration:none;
+       color:#DDD;
+     }
+
+     #banner
+     {
+       width:1000px;
+       height:800px;
+       text-align:center;
+       background-image:url(http://www.exeter.ac.uk/media/universityofexeter/undergraduatewebsite/images/coursetoppanels/mathematics/Maths1.jpg);
+       background-repeat:no-repeat;
+       border-radius:5px;
+       margin:90px auto auto;
+       padding:80px 0;
+     }
+     h2
+     {
+       font-size: 30px;
+       margin-top:0;
+       font-family:Arial, sans-serif;
+       letter-spacing:4px;
+       text-decoration:none;
+       color:#DDD;
+     }
+
+     .lead
+     {
+       background-color:rgba(200,0,,0.6);
+       border-radius:3px;
+       box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+       font-family:Sintony, sans-serif;
+     }
+   </style>
+
+ </head>
+ <body>
+
+
+   <body>
+     {% if not error %}
+          <h1>Hello {{name}}!</h1>
+          <h1>Your Age: {{age}}</h1>
+          <h1>Your Favorite SoftDes Ninja: Patrick</h1>
+     {% else %}
+          <h1>{{error}}</h1>
+     {% endif %}
+   </body>
+</html>
